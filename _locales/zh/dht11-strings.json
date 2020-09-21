@@ -1,0 +1,7 @@
+{
+    "dht11|block": "温湿度传感器",
+    "dht11.get_DHT11_value|block": "温湿度传感器DHT11 引脚 %pin_arg 获取 %dhtResult",
+    "dht11.Dht11Result.Celsius|block": "摄氏度",
+    "dht11.Dht11Result.Fahrenheit|block": "华摄度",
+    "dht11.Dht11Result.humidity|block": "湿度"
+}

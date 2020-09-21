@@ -1,0 +1,15 @@
+{
+    "name": "dht11",
+    "version": "0.0.0",
+    "description": "",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "dht11.ts",
+        "_locales/zh/dht11-strings.json"
+    ],
+    "public": true
+}
