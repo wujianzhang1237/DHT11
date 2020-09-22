@@ -83,5 +83,16 @@ namespace dht11 {
         default:
             return 0;
     }
-}
+    }
+
+    //% blockId=VibrationMotor block="vibration motor|at %pin|speed %speed"
+    export function VibrationMotor(pin: AnalogPin, speed: number): void {
+        pins.analogWritePin(pin, speed);
+    }
+
+    //% blockId=HumanBodyInfrared block="human body infrared|at %pin"
+    export function  HumanBodyInfrared(pin: DigitalPin): number {
+        return pins.digitalReadPin(pin);
+    }    
+
 }
