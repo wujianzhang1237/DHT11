@@ -1,0 +1,6 @@
+{
+  "dht11.dht11value|block": "DHT11傳感器的 %dht11type|值 連接至 %dht11pin",
+  "dht11.DHT11Type.DHT11_humidity|block": "濕度(0~100)",
+  "dht11.DHT11Type.DHT11_temperature_C|block": "攝氏溫度(℃)",
+  "dht11.DHT11Type.DHT11_temperature_F|block": "華氏溫度(℉)"
+}

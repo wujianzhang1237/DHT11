@@ -9,7 +9,8 @@
     "files": [
         "README.md",
         "dht11.ts",
-        "_locales/zh/dht11-strings.json"
+        "_locales/zh-cn/dht11-strings.json",
+        "_locales/zh-tw/dht11-strings.json"
     ],
     "public": true
 }
