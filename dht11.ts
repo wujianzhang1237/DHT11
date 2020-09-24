@@ -1,3 +1,11 @@
+/*
+Copyright (C): 2010-2020, Shenzhen Yahboom Tech
+modified from wujianzhang
+load dependency
+"dht11": "file:../pxt-dht11"
+*/
+
+
 //% weight=0 color=#3CB371 icon="\uf043" block="dht11"
 namespace dht11 {
 

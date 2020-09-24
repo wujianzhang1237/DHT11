@@ -1,7 +1,7 @@
 {
     "name": "dht11",
     "version": "0.0.0",
-    "description": "",
+    "description": "Extension for YahBoom dh11 V1.0.1",
     "license": "MIT",
     "dependencies": {
         "core": "*"
