@@ -77,7 +77,8 @@ namespace dht11 {
                     }
                 }
             }
-            return Math.round((((dhtvalue & 0x0000ff00) >> 8) * 9 / 5) + 32);
+            let F_degree:number = Math.round((((dhtvalue & 0x0000ff00) >> 8) * 9 / 5) + 32);
+            return F_degree;
             break;
         case 2:
             while (pins.digitalReadPin(dht11pin) == 1);
