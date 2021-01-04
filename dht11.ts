@@ -55,30 +55,31 @@ namespace dht11 {
             return ((dhtvalue1 & 0x0000ff00) >> 8);
             break;
         case 1:
+            let dhtvalue_F = 0;
+            let dhtcounter_F = 0;
+            let dhtcounter_F_d = 0;
             while (pins.digitalReadPin(dht11pin) == 1);
             while (pins.digitalReadPin(dht11pin) == 0);
             while (pins.digitalReadPin(dht11pin) == 1);
-            let dhtvalue = 0;
-            let dhtcounter = 0;
-            let dhtcounterd = 0;
+
             for (let i = 0; i <= 32 - 1; i++) {
-                dhtcounterd = 0
+                dhtcounter_F_d = 0
                 while (pins.digitalReadPin(dht11pin) == 0);
                 {
-                    dhtcounterd += 1;
+                    dhtcounter_F_d += 1;
                 }
-                dhtcounter = 0
+                dhtcounter_F = 0
                 while (pins.digitalReadPin(dht11pin) == 1) {
-                    dhtcounter += 1;
+                    dhtcounter_F += 1;
                 }
                 if (i > 15) {
-                    if (dhtcounter > dhtcounterd) {
-                        dhtvalue = dhtvalue + (1 << (31 - i));
+                    if (dhtcounter_F > dhtcounter_F_d) {
+                        dhtvalue_F = dhtvalue_F + (1 << (31 - i));
                     }
                 }
             }
-            let F_degree:number = Math.round((((dhtvalue & 0x0000ff00) >> 8) * 9 / 5) + 32);
-            return F_degree;
+            
+            return Math.round((((dhtvalue_F & 0x0000ff00) >> 8)*9/5) + 32);
             break;
         case 2:
             while (pins.digitalReadPin(dht11pin) == 1);
